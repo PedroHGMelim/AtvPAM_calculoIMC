@@ -3,9 +3,9 @@ import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
 //6-10 adiciona constante result que exibe o resultado do imc na tela
-const Result = ({ imc }) => {
+const Result = ({imc}) => {
     return (
-        <Text style={styles.result}>Seu IMC é {IMC}</Text>
+        <Text style={styles.result}>Seu IMC é {imc}</Text>
     );
 };
 

@@ -1,7 +1,9 @@
-//2-3 importando as funções View, TextInput, Button e StyleSheet do react-native e o Result do arquivo Result.js
+//2-5 importando as funções View, TextInput, Button e StyleSheet do react-native e o Result do arquivo Result.js
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 import Result from './Result';
+import {useState} from 'react';
 
+//6-17 define uma constante formIMC e dentro dela outa constante calcularIMC para usar as constantes alturaMetros e peso para calcular o valor do IMC
 const FormIMC = () => {
     const [peso, setPeso] = useState('');
     const [altura, setAltura] = useState('');
@@ -15,6 +17,7 @@ const FormIMC = () => {
         };
     };
 
+    //20-40 faz com que a constante FormIMC retorne um formulario para colocar seu peso e altura com um botão para calcular o IMC
     return (
         <View style={StyleSheet.formContainer}>
             <TextInput
@@ -37,6 +40,7 @@ const FormIMC = () => {
     );
 };
 
+//43-57 cria uma stylesheet e estiliza o container do formulario e o input
 const styles = StyleSheet.create({
     formContainer: {
         backgroundColor: '#f0f0f0',
@@ -53,4 +57,5 @@ const styles = StyleSheet.create({
     },
 });
 
+//exporta a função para ser usada em outro arquivo
 export default FormIMC;

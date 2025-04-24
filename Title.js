@@ -1,4 +1,4 @@
-//2 importando a StyleSheet de textos do React Native
+//3 importando a StyleSheet de textos do React Native
 import {Text, StyleSheet} from 'react-native';
 
 //5-9 adiciona a constante titulo que caso chamada vai exibir o titulo "Calculador de IMC"
